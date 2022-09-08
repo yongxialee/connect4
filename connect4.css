@@ -1,0 +1,47 @@
+h1{
+    text-align:center;
+    font-size: 5rem;
+    font-family: Monaco;
+    color:orange;
+}
+body{
+    background-color: darkgray;
+}
+#game {
+    display:flex;
+    justify-content:center;
+    
+}
+#board td {
+    width: 90px;
+    height: 90px;
+    border: solid 2px white;
+    background-color:blue;
+    opacity: .9;
+
+}
+.p1{
+    background-color: red;
+}
+.p2{
+    background-color: yellow;
+}
+/*colum-top is table row of clickable areas for each column */
+#column-top td{
+    border: dash 10px red;
+}
+#column-top td:hover {
+    width:0;
+    height:0;
+    border-left: 40px solid transparent;
+    border-top: 40px solid white;
+    border-right: 40px solid transparent;
+}
+.piece {
+    margin: 7px;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    animation: drop .5s linear forwards;
+}
+
